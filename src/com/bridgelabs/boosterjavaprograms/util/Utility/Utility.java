@@ -225,5 +225,38 @@ public class Utility {
 		}
 		return (int) result;
 	}
+public static String flipCoinWin() {
+	 int loopCount = 1;
+     int headCount = 0;
+     int tailCount = 0;
+     double result;
+     int num;
+     Scanner sc = new Scanner(System.in);
+     System.out.println("Enter The Number: ");
+     num = sc.nextInt();
 
+     while (loopCount < num) {
+
+         result = Math.random();
+
+         if (result <= .5) {
+             headCount++;
+             System.out.println("Thelt is heads.");
+         }
+         else {
+             tailCount++;
+             System.out.println("Thelt is tails.");
+         }
+         loopCount = loopCount + 1;
+
+
+         }
+     if(headCount > tailCount){
+         System.out.println("Head Wins");
+     }
+     else {
+         System.out.println("Tail Wins");
+     }
+	return "";
+}
 }
