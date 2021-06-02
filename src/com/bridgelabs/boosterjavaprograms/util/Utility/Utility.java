@@ -206,4 +206,24 @@ public class Utility {
 
 	}
 
+	public String inputInteger() {
+		// TODO Auto-generated method stub
+		return "";
+	}
+	
+	public static int Harmonic() {
+		int num;
+		double result = 0.0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		num = sc.nextInt();
+
+		while (num > 0) {
+			result = result + (double) 1 / num;
+			num--;
+			System.out.println(result + ",");
+		}
+		return (int) result;
+	}
+
 }
